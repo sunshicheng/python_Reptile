@@ -1,9 +1,6 @@
 #.gitignore
-*.iml
-*.pyc
-*.html
-*.txt
 *.swp
-*.xml
 .DS_Store
+*.pyc
+.idea/
 
