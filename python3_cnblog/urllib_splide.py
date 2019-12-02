@@ -10,7 +10,7 @@ FileName : urllib_splide.py
 """
 使用urlopen函数打开网页
 
-"""
+
 
 import urllib.request
 
@@ -21,3 +21,13 @@ print(response.read())
 print(response.status)
 print(response.getheaders())
 print(response.getheader('Server'))
+"""
+
+import urllib.parse
+import urllib.request
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
+data = bytes(urllib.parse.urlencode({'name':'hello','pass':'123'}),encoding='utf-8')
+response = urllib.request.urlopen('http://www.iqianyue.com/mypost',data=data)
+print(response.read())
