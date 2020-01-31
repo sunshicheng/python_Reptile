@@ -6,7 +6,10 @@ FileName : urllib_splide.py
 使用urllib 模块的爬虫学习
 
 """
-import requests
+# import requests
+#
+# response = requests.get('https://www.baidu.com')
+# print(response)
 
-response = requests.get('https://www.baidu.com')
-print(response)
+import urllib.parse
+print(help(urllib.parse))
